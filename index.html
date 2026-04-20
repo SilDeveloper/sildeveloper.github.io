@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SilDeveloper — Portfólio</title>
+  <meta name="description" content="Portfólio de SilDeveloper — desenvolvedora de software focada em Python, Flask e sistemas web. Projetos autorais e experiência em ensino de programação." />
+  <meta name="author" content="SilDeveloper" />
+
+  <!-- Open Graph (preview ao compartilhar o link) -->
+  <meta property="og:title" content="SilDeveloper — Portfólio" />
+  <meta property="og:description" content="Desenvolvedora de software focada em Python, Flask e sistemas web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sildeveloper.github.io" />
+
+  <!-- Favicon SVG inline (não precisa de arquivo externo) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%239b2d6f'/><text y='.9em' font-size='65' x='50%' dominant-baseline='auto' text-anchor='middle' font-family='sans-serif' font-weight='800' fill='white'>S</text></svg>" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos próprios -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Sil<span>Developer</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <!-- Menu hambúrguer (mobile) -->
+      <button class="nav-hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Menu mobile dropdown -->
+    <div class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="section-inner">
+      <div class="hero-label">Desenvolvedora de Software</div>
+      <h1 class="hero-name">
+        Oi, eu sou<br>
+        a <span class="accent">Sil!</span>
+      </h1>
+      <p class="hero-tagline">
+        Gosto de entender um problema do zero e construir
+        a solução — do banco de dados até a tela.
+        Trabalho principalmente com <strong>Python & Flask</strong>,
+        mas não tenho medo de aprender o que o projeto pedir.
+      </p>
+      <div class="hero-cta">
+        <a href="#projetos" class="btn-primary-custom">Ver projetos →</a>
+        <a href="https://github.com/SilDeveloper" target="_blank" rel="noopener" class="btn-ghost-custom">GitHub</a>
+      </div>
+      <div class="hero-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Flask</span>
+        <span class="stack-tag">SQLite</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Bootstrap</span>
+        <span class="stack-tag">Automação</span>
+        <span class="stack-tag">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div>
+          <div class="overline fade-in-up">Sobre mim</div>
+          <h2 class="section-title fade-in-up">Backend com<br>alma de produto.</h2>
+          <blockquote class="about-highlight fade-in-up">
+            "Do banco de dados até o botão na tela."
+          </blockquote>
+        </div>
+        <div>
+          <p class="about-desc fade-in-up">
+            Sou desenvolvedora de software com foco em <strong>Python e sistemas web</strong>.
+            Gosto de projetos que têm começo, meio e fim — onde eu posso pensar na arquitetura,
+            escrever o backend e ainda cuidar para que a interface faça sentido para quem usa.
+          </p>
+          <p class="about-desc about-desc--gap fade-in-up">
+            Tenho formação em Computação pela UFF, estou finalizando o mestrado em
+            <strong>Modelagem Computacional</strong> e já ensinei programação para crianças,
+            adolescentes e adultos — o que me fez aprender a explicar código de formas que
+            qualquer pessoa entende.
+          </p>
+          <div class="skills-block fade-in-up">
+            <div class="skills-category">
+              <div class="skills-label">Stack</div>
+              <div class="skills-tags">
+                <span class="skill-tag">Python / Flask</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Automação</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <div class="skills-label">Comportamentais</div>
+              <div class="skills-tags">
+                <span class="skill-tag">Resolução de problemas</span>
+                <span class="skill-tag">Pensamento analítico</span>
+                <span class="skill-tag">Adaptabilidade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="overline fade-in-up">Projetos</div>
+        <h2 class="section-title fade-in-up">O que eu construí:</h2>
+        <p class="section-sub fade-in-up">Sistemas reais, com código real.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- QualiStock -->
+        <a href="https://github.com/SilDeveloper/QualiStock" target="_blank" rel="noopener" class="project-card fade-in-up">
+          <div class="project-img project-img--qualistock">
+            <div class="project-img-label">QualiStock</div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">01 — Sistema Web</div>
+            <h3 class="project-title">QualiStock</h3>
+            <p class="project-desc">
+              Sistema de gestão de estoque com controle de produtos, combos e vendas.
+              Auditoria completa via logs e geração de relatórios em PDF.
+              Arquitetura modular com Flask Blueprints.
+            </p>
+            <div class="project-techs">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Bootstrap 5</span>
+              <span class="tech-pill">ReportLab</span>
+            </div>
+            <div class="project-link">
+              Ver no GitHub
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- NotificaSil -->
+        <a href="https://github.com/SilDeveloper/NotificaSil" target="_blank" rel="noopener" class="project-card fade-in-up">
+          <div class="project-img project-img--notifica">
+            <div class="project-img-label">NotificaSil</div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">02 — App de Produtividade <span class="project-wip">Em desenvolvimento</span></div>
+            <h3 class="project-title">NotificaSil</h3>
+            <p class="project-desc">
+              Mural de notas digitais inspirado em post-its, com tarefas, upload de imagens
+              e drag-and-drop. JavaScript modular, agenda integrada
+              e alertas por prazo ou lembrete diário.
+            </p>
+            <div class="project-techs">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Flask</span>
+              <span class="tech-pill">SQLite</span>
+              <span class="tech-pill">JS Modular</span>
+              <span class="tech-pill">Bootstrap</span>
+              <span class="tech-pill">CSS</span>
+            </div>
+            <div class="project-link">
+              Ver no GitHub
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <div class="section-inner">
+      <div class="about-grid about-grid--wide">
+
+        <!-- Coluna: Experiência profissional -->
+        <div>
+          <div class="overline fade-in-up">Experiência</div>
+          <h2 class="section-title fade-in-up">Trajetória.</h2>
+          <div class="timeline">
+
+            <div class="timeline-item fade-in-up">
+              <div class="timeline-dot"></div>
+              <div class="timeline-period">2023</div>
+              <div class="timeline-role">Professora de Programação</div>
+              <div class="timeline-org">Espaço Paduano de Aprendizagem (EPA)</div>
+              <div class="timeline-desc">
+                Ensino de lógica de programação e desenvolvimento de raciocínio computacional.
+              </div>
+            </div>
+
+            <div class="timeline-item fade-in-up">
+              <div class="timeline-dot"></div>
+              <div class="timeline-period">2021 — 2023</div>
+              <div class="timeline-role">Instrutora de Programação</div>
+              <div class="timeline-org">Byju's Future School</div>
+              <div class="timeline-desc">
+                Ensino de desenvolvimento de software utilizando JavaScript,
+                React Native e Node.js para estudantes.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Coluna: Formação -->
+        <div>
+          <div class="overline fade-in-up">Educação</div>
+          <h2 class="section-title fade-in-up">Formação.</h2>
+          <div class="edu-grid">
+
+            <div class="edu-card edu-card--full fade-in-up">
+              <div class="edu-degree">Mestrado em Modelagem Computacional</div>
+              <div class="edu-inst">UFF</div>
+              <div class="edu-status">Em fase final de dissertação</div>
+            </div>
+
+            <div class="edu-card fade-in-up">
+              <div class="edu-degree">Licenciatura em Computação</div>
+              <div class="edu-inst">UFF</div>
+              <div class="edu-status">Graduação completa — 2020</div>
+            </div>
+
+            <div class="edu-card fade-in-up">
+              <div class="edu-degree">Programadora de Sistemas</div>
+              <div class="edu-inst">Qualifica Maricá</div>
+              <div class="edu-status">Qualificação profissional — 200h · 2026</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="section-inner">
+      <div class="contact-box fade-in-up">
+        <h2 class="contact-title">Vamos trabalhar<br>juntos?</h2>
+        <p class="contact-sub">
+          Aberta a projetos, colaborações e oportunidades.
+          Me encontra no GitHub ou LinkedIn.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/SilDeveloper" target="_blank" rel="noopener" class="btn-primary-custom">
+            GitHub →
+          </a>
+          <a href="https://www.linkedin.com/in/silvia-miguez123/" target="_blank" rel="noopener" class="btn-ghost-custom">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="section-inner">
+      <p>Feito com HTML, CSS & Bootstrap · SilDeveloper · 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
