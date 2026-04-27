@@ -1,0 +1,80 @@
+/* ─── NAVBAR ─── */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(14, 11, 20, 0.7);
+  border-bottom: 1px solid var(--clr-border);
+  transition: background 0.3s;
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--clr-text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--clr-accent-light); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  color: var(--clr-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--clr-text); }
+
+/* ─── MENU HAMBÚRGUER ─── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--clr-text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.active span:nth-child(2) { opacity: 0; }
+.nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ─── MENU MOBILE DROPDOWN ─── */
+.nav-mobile {
+  display: none;
+  background: rgba(14, 11, 20, 0.97);
+  border-top: 1px solid var(--clr-border);
+  padding: 1rem 2rem 1.5rem;
+}
+.nav-mobile.open { display: block; }
+.nav-mobile ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.nav-mobile a {
+  color: var(--clr-muted);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.nav-mobile a:hover { color: var(--clr-text); }
